@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>About Me project</title>
+        <style> 
+            body{
+                text-align: center;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(20, 238, 136);
+                background-color:rgb(206, 83, 11)
+            }
+            h1{
+                color:royalblue
+            }
+        </style>
+
+    </head>
+    <script>
+        function Jungi(){
+            var test = document.getElementById('1').value;
+            var hi = document.getElementById('2').value;
+            var bye = document.getElementById('3').value;
+            var name = document.getElementById('nameId').value;
+            var hola = document.getElementById('4').value;
+            var A = document.getElementById('5').value;
+            var answer = "";
+            answer += "Hi " + name +"!" + " Your favorite sports is " + test + "<br>";
+            answer += "Your favorite food is " + hi + "<br>";
+            answer += "Your favorite subject in school is " + bye + "<br>";
+            answer +=" Also you like to " + hola + "<br>";
+            answer +=" More information about you is " + A
+            document.getElementById('jungiId').innerHTML = answer;
+        }
+    </script>
+    <body>
+       
+       <h1>ABOUT ME</h1> 
+      <h4>Jungi Kim</h4>
+      <img src= "cat.jfif" height="400" width="395" >
+      
+      <h1 style="font-size: 40px;">Hobbies</h1>
+      <h3>Name: <input type="text" id = 'nameId'></h3> 
+      <h3>Favorite Sports: <input type="text" id = '1'></h3> 
+      <h3>Faovorite Food: <input type="text" id = '2'></h3>
+      <h3>Favorite Subject: <input text="text" id = 3></h3>
+      <h3>What I like to : <input text="text" id = 4> <input</h3>
+     <h3>More Information : <input text="text" id=5></h3>
+         <input type="button" value="Submit" onclick= Jungi() >
+         <div id = 'jungiId'></div>
+    </body>
+
+</html>
+
+
